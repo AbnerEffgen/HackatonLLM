@@ -25,7 +25,6 @@ try:
     genai.configure(api_key=API_KEY)
 
     # Token de segurança para a nossa API
-    # SENHA GERADA: SuperSecretToken_2025_For_SplitBill_API_!@#$9876_And_More_Entropy_XYZ
     API_BEARER_TOKEN = os.getenv("API_BEARER_TOKEN")
     if not API_BEARER_TOKEN:
         logging.critical("Variável de Ambiente 'API_BEARER_TOKEN' não está definida. Encerrando.")
