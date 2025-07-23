@@ -75,9 +75,9 @@ Do NOT include any extra text, explanations, apologies, or commentary before or 
 """
 
 # --- 3. Definição dos Modelos de IA ---
-llm1_calculator = genai.GenerativeModel(model_name='gemini-1.5-flash', system_instruction=SYSTEM_PROMPT_LLM1)
-llm2_guardrail = genai.GenerativeModel(model_name='gemini-1.5-flash', system_instruction=SYSTEM_PROMPT_LLM2)
-llm3_splitter = genai.GenerativeModel(model_name='gemini-1.5-flash', system_instruction=SYSTEM_PROMPT_LLM3)
+llm1_calculator = genai.GenerativeModel(model_name='gemini-2.0-flash', system_instruction=SYSTEM_PROMPT_LLM1)
+llm2_guardrail = genai.GenerativeModel(model_name='gemini-2.0-flash', system_instruction=SYSTEM_PROMPT_LLM2)
+llm3_splitter = genai.GenerativeModel(model_name='gemini-2.0-flash', system_instruction=SYSTEM_PROMPT_LLM3)
 
 # --- 4. Aplicação Flask e Segurança ---
 app = Flask(__name__)
